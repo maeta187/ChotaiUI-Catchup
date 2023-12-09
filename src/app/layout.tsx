@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
+import { Chakra } from '@/contexts/ChakraProvider'
+import { fonts } from '@/lib/fonts'
 import type { Metadata } from 'next'
-import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className={fonts.rubik.variable}>
+      <body className={inter.className}>
+        <Chakra>{children}</Chakra>
+      </body>
     </html>
   )
 }
