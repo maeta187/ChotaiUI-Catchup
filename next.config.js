@@ -2,6 +2,9 @@
 const nextConfig = {
   experimental: {
     swcPlugins: [['@swc-jotai/react-refresh', {}]]
+  },
+  images: {
+    domains: ['bit.ly']
   }
 }
 
