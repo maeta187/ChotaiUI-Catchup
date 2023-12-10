@@ -4,7 +4,7 @@ import { StarIcon } from '@chakra-ui/icons'
 import { Box, Badge } from '@chakra-ui/react'
 import Image from 'next/image'
 
-const CardBox = () => {
+const BoxSample = () => {
   const property = {
     imageUrl: 'https://bit.ly/2Z4KKcF',
     imageAlt: 'Rear view of modern home with pool',
@@ -76,4 +76,4 @@ const CardBox = () => {
   )
 }
 
-export default CardBox
+export default BoxSample
